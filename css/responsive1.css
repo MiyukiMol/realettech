@@ -1,0 +1,235 @@
+@media screen and (max-width:480px){
+		#body{
+		padding:0 5%;
+}
+
+		header{
+			display:flex;
+			justify-content:center;
+			flex-wrap:wrap;
+			font-size:12px;
+		}
+		section {
+			max-width:100%;
+		}
+		
+		footer {
+			max-width:100%;
+		}		
+	
+		#menu {
+			width:100%;
+			margin:20px 0;
+			/* font-size:0.9rem; */
+			display:flex;
+			justify-content:space-between;
+			text-align: right;
+			padding-top:5px;
+		}		
+		
+		#title {
+			display:inline-block;
+			font-size: 2rem;
+			padding:20px 0 0 40px;
+			max-width:100%;
+		}
+
+		#burger,#fermer{display:block}
+
+		#body #menu ul {
+			margin-right: 5px;
+			line-height: 39px;
+			padding-bottom:0;
+			max-width:100%;
+			display:none;
+		}
+		#body:target #menu ul{
+			display:block;
+		}
+		
+		#body:target #burger img{display:none;}
+		
+		#logo{
+			text-align:left;
+			margin-left:10px;
+		}
+
+		#body:target #logo {display:none;}
+
+/***********************************************************/
+		#slider1 h1{
+			font-size: 2rem;
+		}
+
+/***********************************************************/
+		#test4{
+			display:block;
+			height:auto;
+		}
+
+		#test3, #test5{
+			width:100%;
+		}
+		#test3{
+			background-size:100% auto;
+			position: static;
+		}
+
+		#test3 h1{
+			width:100%;
+			height:30vh;
+			font-size: 0.8rem;
+			position: static;
+		}
+
+		#test3 h1 a{
+			display:none;
+		}
+
+		#test5{
+			padding:8%;
+			text-align: center;
+		}
+
+		#test5 span{
+			display:none;			
+		}
+
+/**CONTENT 1*********************************************************/
+		#content1 img{
+			display:none;
+		}
+
+		#content1 article p{
+			padding: 0% 8%;
+		}
+
+		/* #container1 {
+			width: 250px;
+			overflow: hidden;
+		  }
+		.scrollable {
+			width: 270px; /* 250 + 20 */
+			/* height: 300px;
+			overflow: hidden;
+			overflow-y: scroll;
+			-webkit-overflow-scrolling: touch;
+		  } */
+		/* .adjustment {
+			width: 250px; /* 元に戻す */
+		  /* } */ 
+
+/**CONTENT 3*********************************************************/
+		#xr img{
+			width:70vw;
+			height:auto;
+		}
+		
+		.MR img {
+			margin-top:20px;
+		}
+		
+		#xr article {
+			width:100%;
+			padding:0;
+		}
+		
+		.VR {
+			margin-top:20px;
+		}
+
+/***********************************************************/
+		.content4{
+			display:block ;
+			margin-top:20px;
+		}
+
+		.content4>div{
+			width:100%;
+			padding:0 5%;
+			text-align: center;
+
+		}
+
+		.content4 img{
+			width:100%;
+		}
+
+/***********************************************************/
+		#content5{
+			display:block ;
+			margin-top:20px;
+		}
+
+		#content5>div{
+			width:100%;
+			padding:0 5%;
+			text-align: center;
+			
+		}
+
+		#content5 img, video{
+			width:100%;
+		}
+
+		#photo1{
+			display:none;
+		}
+
+		#photo2{
+			display:block;
+		}
+
+/***********************************************************/	
+		#form_contact{
+			padding:0;
+			text-align: center;
+		}
+
+		#form_contact form{
+			width:95%;
+		}
+
+/***********************************************************/
+		#zone4{
+			display:block;
+			text-align: center;
+			height: auto;
+		}
+
+		#zone4 img{
+			margin:5% 0;
+		}
+
+		#zone4>div {
+			width:auto;
+			height:70px;
+		}
+/***********************************************************/
+		#footer1 {
+			text-align: center;
+			padding:10px 0 0;
+		}
+
+		#sns{
+			padding-bottom:20px;
+		}
+
+		#sns, #menu_bas{
+			width:100%;
+			padding-bottom:3%;
+		}
+		
+		#sns ul{
+			text-align: center;
+		}
+
+		#copyright{
+			display:block;
+			padding:3% 0;
+			text-align: center;
+		}
+
+		#copyright p{
+			font-size: 0.8rem;
+		}}

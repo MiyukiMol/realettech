@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Real & Tech</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/responsive_tab.css" />
+    <link rel="stylesheet" href="css/sss.css" type="text/css" />
+    <link rel="stylesheet" href="css/root.css" type="text/css" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">  
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--pour détecter le viewport (résolution du client)-->
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no" /> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/sss.js"></script>
+
+    <script type="text/javascript">
+    (function($){
+	    $('a.couleurChange').click(function(e) { // on a cliqué sur un des liens
+	    e.preventDefault(); // empeche l'action du clic par défaut
+	    // ton code
+	    // $(this) fonctionnera et agit sur <a ... class="couleurChange">
+	    $(this).css({'color':'#AFAA50'});
+	    });
+    });
+</script>
+</head>
+
+
+<body id="body">
+    <!--HEADER-------------------------------------------->
+    <header id="header">
+        <nav id="menu" class="backnoir textblanc">
+            <div id="logo">
+                <a href="#" >
+                <img src="images/logo.png" height="50" alt="Real and Tech" />
+            </a>
+            </div>
+            <div id="burger">
+             <a href="#body"><img id="burgerlogo" src="images/burger.png" height="50" alt="Real"></a>
+            </div>
+          
+            <ul>	
+                <span id="fermer"><a href="#">X</a></span>
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="actualite.html">ACTUALITÉS</a>
+                </li>
+                <li>
+                    <a href="ar.html">AR</a>
+                </li>
+                <li>
+                    <a href="mr.html">MR</a>
+                </li>
+                <li>
+                    <a href="vr.html">VR</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>        
+            </ul>
+        </nav>
+        <h1 id="remarques" style="color : red">C'est un site réalisé pour mon projet pendant ma formation.</h1>
+        <script>
+            $(function() {
+                $('#remarques').hide().fadeIn(5000);
+            });
+        </script>
+    </header>
+
+    <!--SLIDER-------------------------------------------->
+    <section class="slider">
+        <figure>
+            <div class="crop">
+                <img src="images/mr1.jpg" alt="slide 1" />
+            </div>	
+            <figcaption class="caption">L'actualité de VR</figcaption>
+        </figure>
+	
+        <figure>
+            <div class="crop">
+                <img src="images/mr7.jpg" alt="slide 2" />		
+            </div>
+            <figcaption class="caption">L'actualité de MR</figcaption>
+        </figure>
+	
+        <figure>
+            <div class="crop">
+                <img src="images/mr3.jpeg" alt="slide 3" />
+            </div>
+            <figcaption class="caption">L'actualité de XR</figcaption>
+        </figure>
+    </section>
+
+    <script type="text/javascript">
+        $('.slider').sss({
+        slideShow : true, // Set to false to prevent SSS from automatically animating.startOn : 0, // Slide to display first. Uses array notation (0 = first slide).transition : 400, // Length (in milliseconds) of the fade transition.speed : 3500, // Slideshow speed in milliseconds.showNav : true // Set to false to hide navigation arrows.
+        startOn : 0, // Slide to display first. Uses array notation (0 = first slide).	
+        transition : 400, // Length (in milliseconds) of the fade transition.
+        speed : 3500, // Slideshow speed in milliseconds.</span>
+        showNav : true // Set to false to hide navigation arrows.
+        });
+    </script>
+
+    <!--CONTENT-------------------------------------------->
+    <section id="test4" class="backgris">   
+        <div id="test3">          
+            <h1><a href="page1_1.html" class="textblanc">Réalité virtuelle et augmentée :<br />tendances et prédictions pour 2020</a></h1>
+        </div>
+        <article id="test5">
+            <p>ACTUALITÉ</p>
+            <br />
+            <h2>Réalité virtuelle et augmentée <span>:</span><br />tendances et prédictions pour 2020</h2>
+            <br />
+            <p>Que nous réserve l’année 2020 pour la réalité virtuelle et augmentée ? Découvrez les principales tendances du marché, les prédictions des experts industriels et les nouveautés les plus attendues…</p>
+            <br />
+            <p class="date">10 janvier 2020</p>
+            <br />
+            <button class="textgris">
+				<a type="button" onclick="location.href='page1_1.html'">En Savoir Plus</a>
+			</button>          
+        </article>
+    </section>
+
+    <!--CONTENT1-------------------------------------------->
+    <section id="content1">
+		<h1>
+			<span>VR, AR ET MR : QU’EST-CE QUE C’EST ?</span>
+        </h1>
+        <article id="container1">
+            <!-- <div class="scrollable">
+                <div class="adjustement"> -->
+            <p>La réalité virtuelle (VR), réalité augmentée (AR) et réalité mixte (MR) sont des technologies émergentes basées sur l’intégration d’éléments numériques virtuels dans le monde réel : 
+                en surimpression (AR), en interaction avec des éléments de cet environnement réel (MR), ou en totale immersion de l’utilisateur dans un univers virtuel coupé du monde réel (VR).</p>
+            <br />
+            <p>La réalité étendue (XR pour extended reality) est un terme générique regroupant les différentes formes de réalités numériques : réalité augmentée (AR), réalité mixte (MR) et réalité virtuelle (VR).</p>
+            <br />
+            <img src="images/xr.png" alt="AR MR et VR" width="100%" />
+            <!-- </div>
+        </div> -->
+        </article>
+    </section>
+
+    <!--CONTENT3-------------------------------------------->
+    <section id="xr">
+        <article>
+			<img src="images/ar1.jpg" alt="AR" />
+			<h2>La réalité augmentée <br />(AR pour augmented reality) </h2>
+            <p>AR permet de superposer du contenu numérique au monde réel (objets virtuels, informations, etc.). L’utilisateur voit toujours l’environnement réel, avec en surimpression cette couche de contenu numérique. L’affichage s’effectue sur un écran visible par l’utilisateur, le plus souvent via des lunettes de réalité augmentée ou via un smartphone avec une application spécifique offrant des capacités de réalité augmentée.</p>
+			<button class="textgris" type="button" onclick="location.href='ar.html'">En Savoir Plus</button>
+		</article>
+		
+		<article class="MR">
+			<img src="images/mr2.jpg" alt="MR" />
+            <h2>La réalité mixte <br />(MR pour mixed reality) </h2>
+            <p>MR combine plusieurs technologies. Un casque de réalité mixte permet d’intégrer des éléments virtuels dans le monde réel en permettant à ces éléments d’interagir avec l’environnement. L’utilisateur n’est pas coupé du monde réel, il peut voir au travers du casque ou des lunettes de réalité mixte.</p>
+			<button class="textgris" type="button" onclick="location.href='mr.html'">En Savoir Plus</button>
+		</article>
+		
+		<article class="VR">
+			<img src="images/vr1.jpg" alt="VR"/>
+			<h2>La réalité virtuelle <br />(VR pour virtual reality)</h2>
+			<p>VR englobe toutes les expériences immersives disponibles via un casque de réalité virtuelle (aussi appelé HMD pour head-mounted display). L’utilisateur est totalement coupé du monde réel, dans un environnement virtuel visible grâce au casque de réalité virtuelle.</p>
+			<button class="textgris" type="button" onclick="location.href='vr.html'">En Savoir Plus</button>
+		</article>
+	
+	</section>
+    
+   <!--CONTENT4-------------------------------------------->
+   <section>
+        <article class="content4">
+        <div id>
+            <img src="images/ar2.jpg" alt="Réalité Mixte" width="95%" />
+        </div>
+        <div >
+            <h2>Exemples d’utilisation de la réalité augmentée</h2>
+            <br />
+            <p>Il est vrai que Pokemon Go, phénomène mondial, a sans doute grandement contribué à mettre la réalité augmentée à la portée de tous. Dans les prochaines années, il est certain que nous verrons débarquer de multiples objets connectés qui embarqueront nativement des applicatifs de réalité augmentée. Dans Pokemon Go, les joueurs chassent des créatures magiques qu’ils peuvent visualiser sur la table de leur salon ou sur la pelouse dans un parc.</p>
+            <br />
+            <p>Pour se rapprocher de sa vision, l’éditeur travaille à une meilleure intégration des éléments virtuels dans le réel, et vice et versa. Niantic veut par exemple enrichir ses cartes numériques, qui donnent aux joueurs des informations virtuelles (où se trouvent les créatures) et aussi réelles (les monuments remarquables ou les magasins).</p>
+        </div>
+        </article>
+
+        <article id="content5">
+        <div id="photo2">
+            <video preload="none" src="images/edit01.mp4" width="640px" poster="images/mr3.jpg" controls></video>
+        </div>
+        <div>
+            <h2>Exemples d’utilisation de la réalité mixte</h2>
+            <br />
+            <p>Beaucoup imaginent la réalité mixte comme étant avant tout dédiée aux jeux et aux divertissements. C’est pourtant vers les professionnels et vers l’éducation et la formation que la réalité mixte s’oriente en priorité. </p>
+            <br />
+            <p>Microsoft vend ainsi régulièrement des solutions pour la maintenance de matériels de pointe avec des lunettes Hololens. De nombreux concepteurs et ingénieurs travaillent sur une représentation en réalité mixte d’un futur produit afin d’en améliorer l’agencement et visualiser son côté pratique à l’avance. Les architectes sont aussi de plus en plus nombreux à se doter de lunettes de MR afin de visualiser en 3D une maquette d’un bâtiment afin d’en trouver les défauts et d’en améliorer l’aspect. La réalité mixte est aussi de plus en plus utilisée dans la formation, l’éducation et l’apprentissage.  Un élève peut ainsi visualiser en 3D un environnement ou des objets afin d’en étudier le fonctionnement ou réaliser un apprentissage en toute sécurité dans un environnement dangereux.</p>
+        </div>
+        <div id="photo1">
+            <video preload="none" src="images/edit01.mp4" width="640px" poster="images/mr3.jpg" controls></video>
+        </div>
+        </article>
+
+        <article class="content4">
+            <div id>
+                <img src="images/vr4.jpg" alt="Réalité Virtuel" width="95%" />
+            </div>
+            <div >
+                <h2>Exemples d’utilisation de la réalité virtuelle</h2>
+                <br />
+                <p>Qui n’a jamais rêvé de pouvoir se téléporter ? Barboter aux Maldives en un claquement de doigts ? C'est (presque) possible grâce à la réalité virtuelle, les voyagistes sont de plus en plus nombreux à proposer une expérience à 360° à leurs clients.</p>
+                <br />
+                <p>FlyView est une expérience unique qui utilise la réalité virtuelle et vous donne la sensation de voler au-dessus de Paris et ses monuments.</p>
+                <p>Marie, assistante chef de projet au sein d'une agence de publicité, relate son aventure virtuelle avec cette nouvelle technologie : «Je suis allée direct à l’île Maurice. J’y suis déjà allée en vrai, et avec la VR, j’y étais, ça ressemblait à s'y m'éprendre ! J’étais choquée par la netteté de l’image.» </p>
+                <p>Le voyage virtuel restera-t-il cantonné au rang de loisir voire de jeu ? Alain Capestan préfère le voir comme un outil permettant d'accompagner le consommateur : «La VR doit être une ouverture, une invitation au voyage. Elle est une évolution technologique pouvant améliorer la prise d’information et le choix du voyageur. </p>
+            </div>
+        </article>
+    </section>
+
+   <!--CONTACT-------------------------------------------->    
+
+   <section id="form_contact" class="backgris textgris">
+        <h1>Contactez-nous / Devenir annonceur</h1>
+        <p>Vous souhaitez devenir annonceur ? Proposer une publication sponsorisée ? Nous faire part de vos remarques ? 
+           <br />Remplissez le formulaire ci-dessous et nous vous recontacterons dans les plus brefs délais.</p>
+        <form action="#" method="POST">
+            <div class="t50">				
+                <input placeholder="Nom" id="nom" name="nom" type="text" value="" />
+                <label for="nom">Nom</label>
+            </div>
+            <div class="t50">
+                <input placeholder="Prénom" id="prenom" name="prenom" type="text" value="" />
+                <label for="prenom">Prénom</label>
+            </div>
+            <div class="t100">
+                <input placeholder="Email" id="mel" name="mel" type="email" value="" />
+                <label for="mel">Email</label>
+            </div>
+            <div class="t100">
+                <input placeholder="Téléphone" id="tel" name="tel" type="tel" inputmode="tel" value="" />
+                <label for="tel">Téléphone</label>
+            </div>
+            <div id="sel">
+                <select class="textgris">
+                    <option value="" hidden>Pourquoi nous contactez-vous?</option>
+                    <option value="1">Devenir annonceur</option>
+                    <option value="2">Publication sponsorisée</option>
+                    <option value="3">Communiqué de presse</option>
+                    <option value="4">Remarque</option>
+                    <option value="5">Autre</option>
+                </select>
+            </div>
+            <div class="t100">
+                <textarea placeholder="Message" id="message" name="message"></textarea>
+                <label for="message">Message</label>
+            </div>
+            <div class="t100 cgu">
+                <input placeholder="test" id="cgu" name="cgu" type="checkbox" value="oui" />
+                <label for="cgu">J´accepte les conditions générales du site sur la protection des données à caractère personnel</label>
+            </div>
+            <div class="t100 cgu">
+                <input placeholder="test" id="cgu" name="cgu" type="checkbox" value="oui" />
+                <label for="cgu">J'accepte d'être recontacté par email ou par téléphone</label>
+            </div>
+            <input class="textgris" name="submit" type="submit" value="ENVOYER" />
+        </form>
+    </section>
+
+   <!--CONTENT7-------------------------------------------->  
+    <section id="zone4">
+        <div>
+            <a href="https://www.commentcamarche.net/">
+                <img src="images/logo1.png" width="120px" alt="CCM" />
+            </a>
+        </div>
+        <div>
+            <a href="https://www.viatechnik.com/">
+                <img src="images/logo2.png" width="120px" alt="CCM" />
+            </a>
+        </div>
+        <div>
+            <a href="https://www.usine-digitale.fr/">
+                <img src="images/logo3.png" width="120px" alt="CCM" />
+            </a>
+        </div>
+        <div>
+            <a href="https://www.v-cult.com/">
+                <img src="images/logo4.png" width="120px" alt="CCM" />
+            </a>
+        </div>
+        <div>
+            <a href="https://www.flyview360.com/">
+                <img src="images/logo5.png" width="120px" alt="CCM" />
+            </a>
+        </div>
+        <div>
+            <p class="toTop">Retour en haut</p>
+        </div>
+        <script type="text/javascript">
+        $(function(){
+            $('.toTop').click(function () {
+              $('body,html').animate({
+                scrollTop: 0
+              }, 800);
+              return false;
+            });
+          });
+        </script>
+    </section>
+
+    <!--FOOTER-------------------------------------------->  
+    <footer class="backnoir">
+        <div id="footer1">
+            <div id="sns">
+                <a href="#">
+                    <img src="images/logo.png" width="200" alt="Real & Tech" />
+                </a>
+                <ul >
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook-square fa-2x my-blue fa-fw"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter-square fa-2x my-blue fa-fw"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram fa-2x my-blue fa-fw"></i>
+                        </a>
+                    </li>
+                </ul >
+            </div>
+            <nav id="menu_bas">
+                <ul >   
+                    <li>
+                        <a href="#">HOME</a>
+                    </li>
+                    <li>
+                        <a href="actualite.html">ACTUALITÉS</a>
+                    </li>
+                    <li>
+                        <a href="ar.html">AR</a>
+                    </li>
+                    <li>
+                        <a href="mr.html">MR</a>
+                    </li>
+                    <li>
+                        <a href="vr.html">VR</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>            
+                </ul>
+            </nav>           
+            <div style="margin-top:10px;">
+                <p>Real & Tech</p>
+                <p>2 Avenue de Saint-Malo</p>
+                <p>35000 RENNES</p>
+            </div>
+        </div>
+
+        <div id="copyright">
+            <p>Copyright &copy; 2020, Real & Tech   All Right Reserved</p>
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Terms & conditions</a></p>
+        </div>
+        
+    </footer>
+</body>
+</html>

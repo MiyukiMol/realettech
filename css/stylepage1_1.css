@@ -1,0 +1,185 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+p, figcaption{
+    color:var(--couleur_textgris);
+    font-size: 1.1rem;
+}
+
+.date {
+	padding:15px 0;
+}
+
+
+/**HEADER*******************************************************/
+
+#header{
+    min-height:100px;
+    text-align:center;
+}
+
+#menu {
+    min-height:50px;
+    text-align:center; 
+    width:100%;
+    display:flex;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    position:relative;
+}
+
+#header a {
+   text-decoration:none;
+} 
+
+#header a:link {
+   color:#fff;
+} 
+
+#header a:visited {
+   color:#fff;
+}
+    
+    #burger,#fermer{display:none}
+    #burger a{color:#fff}
+    #burger{
+        height:30px;
+    }
+    #fermer{
+        position:absolute;
+        width:40px;
+        height:40px;
+        right:0;
+        top:0;
+        z-index:10;
+        }
+    #fermer a{
+        display:inherit;
+        width:inherit;
+        height:inherit;
+    }	
+    
+    #menu ul {
+        text-align:center;
+        list-style-type:none;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width:1000px;
+        margin-right:15%;
+    }
+    
+    #menu li {
+        position:relative;
+        margin:0;
+    }
+    
+    #menu li::after {
+        position:absolute;
+        right:-12px;
+        z-index:1;   
+    }
+    
+    #menu li:last-child::after {
+        content:"";
+    }
+    #menu li a{
+        display: block;
+        padding: 10px 10px 20px;
+    }
+    #menu li a:hover {
+        background-color:var(--couleur_darkgris);
+        color:#fff;
+    }
+    
+    #menu li:nth-child(3) {
+        background-color:var(--couleur_darkgris);
+    }
+
+    #logo{
+        margin-left:15%;
+	}
+	
+/**ARTICLE*******************************************************/
+
+#blog {
+	max-width: 70%;
+	margin: 0 auto 10vh;
+	text-align: justify;
+}
+
+#blog h1 {
+	text-align:center;
+}
+
+#blog p {
+	font-family: 'Lato', sans-serif;
+}
+
+#blog img {
+	margin:30px 0 20px;
+	width:22vw;
+	height:30vh;
+}
+
+
+
+/**FOOTER*********************************************************/
+footer{
+    min-height:80px;
+}
+
+#footer1{
+    display:flex;
+	text-align:center;
+	justify-content:space-around;
+	flex-wrap:wrap;/*permet de passer à la ligne quand les 100% sont atteints*/
+	padding:2% 15%;
+}
+
+footer p{
+    font-size: 1rem;
+}
+
+#sns ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type:none;
+    justify-content: center;
+}
+
+.my-blue{
+    color:var(--couleur_textgris);
+}
+
+#menu_bas ul{
+    list-style-type:none;
+    text-decoration: none;
+}
+
+#menu_bas ul a{
+    text-decoration: none;
+    color:var(--couleur_textgris);
+    font-family: 'Lato', sans-serif;
+}
+#menu_bas ul li{
+    margin:10px 0;
+}
+
+#copyright{
+    display:flex;
+    justify-content: flex-end;
+    padding:0 15% 2%;
+}
+
+#copyright p{
+    margin-right:20px;
+    font-size: 0.9rem;
+}
+
+#copyright a{
+    color:var(--couleur_textgris);
+    text-decoration: none;
+}

@@ -1,0 +1,83 @@
+.sss {
+	height: 0;
+	margin: 0; 
+	padding: 0;
+	position: relative;
+	display: block;
+}
+
+.ssslide {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.sssnext, .sssprev {
+	width: 25px;
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	background: url('../images/arr.png') no-repeat;
+}
+
+.sssprev {
+	left: 3%;
+	background-position: 0 50%;
+}
+
+.sssnext {
+	right: 3%;
+	background-position: -26px 50%;
+}
+
+.sssprev:hover, .sssnext:hover {
+	cursor: pointer;
+}
+
+/****************************************************/
+.slider{
+	padding:0 15%;
+	height:30vw;
+	margin-bottom:5vw;
+	position:relative;
+}
+
+.slider .sss,
+.sss figure{
+	height:inherit;	
+}
+
+.slider .crop{
+	height:inherit;
+	overflow:hidden;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border-radius:15px;
+}
+
+.slider .caption{
+	position:absolute;
+	z-index:100;
+	top:30vw;
+	left:0;
+	width:100%;
+	padding:15px 5%;
+	text-align:center;
+	background:linear-gradient(to left,transparent,rgba(0,0,0,0.8),transparent);
+	color:#fff;
+	font-size:1.2em;
+}
+
+.slider img{
+	min-width:100%;
+	min-height:100%;
+	max-width:150%;
+	max-height:150%;
+	display:block;	
+}

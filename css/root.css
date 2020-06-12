@@ -1,0 +1,35 @@
+*{
+	padding:0;/*marge interne*/
+	margin:0;/*marge externe*/
+	box-sizing:border-box;
+}
+input,a img,textarea,select{
+	outline:none;
+}
+
+:root{
+--couleur_darkgris:#424242;
+--couleur_textgris:#848484;
+--couleur_backgris:#F6F6F6;	
+}
+
+.backgrisdark{
+	background-color:var(--couleur_darkgris);
+}
+
+
+.backgris{
+	background-color:var(--couleur_backgris);
+}
+
+.backnoir{
+	background-color:#000;
+}
+
+.textgris{
+	color:var(--couleur_textgris);
+}
+
+.textblanc{
+	color:#fff;
+}

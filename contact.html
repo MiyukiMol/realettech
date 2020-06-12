@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Real & Tech</title>
+    <link rel="stylesheet" href="css/contact.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" /> 
+    <link rel="stylesheet" href="css/sss.css" type="text/css" />
+    <link rel="stylesheet" href="css/root.css" type="text/css" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/sss.js"></script>
+
+    <script type="text/javascript">
+    (function($){
+	    $('a.couleurChange').click(function(e) { // on a cliqué sur un des liens
+	    e.preventDefault(); // empeche l'action du clic par défaut
+	    // ton code
+	    // $(this) fonctionnera et agit sur <a ... class="couleurChange">
+	    $(this).css({'color':'#AFAA50'});
+	    });
+    });
+</script>
+</head>
+
+
+<body id="body">
+    <!--HEADER-------------------------------------------->
+    <header id="header">
+        <nav id="menu" class="backnoir textblanc">
+            <div id="logo">
+                <a href="index.html" >
+                <img src="images/logo.png" height="50" alt="Real and Tech" />
+            </a>
+            </div>
+            <div id="burger">
+             <a href="#body"><img id="burgerlogo" src="images/burger.png" height="50" alt="Real"></a>
+            </div>
+
+           
+            <ul>	
+                <span id="fermer"><a href="#">X</a></span>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="actualite.html">ACTUALITÉS</a>
+                </li>
+                <li>
+                    <a href="ar.html">AR</a>
+                </li>
+                <li>
+                    <a href="mr.html">MR</a>
+                </li>
+                <li>
+                    <a href="vr.html">VR</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>        
+            </ul>
+        </nav>
+    </header>
+
+   <!--section-------------------------------------------->    
+    <!-- <section id="cover">
+        <img src="images/contact1.jpg" alt="" style="border:solid 1px #ccc;padding:4px;"/>
+        <img src="images/vr4.jpg" alt="" style="border:solid 1px #ccc;padding:4px;"/>
+        <img src="images/blog2020_3.jpg" alt="" style="border:solid 1px #ccc;padding:4px;"/>
+    </section> -->
+
+    <!--SLIDER-------------------------------------------->
+    <section id="slider1">
+        <h1 class="textblanc">CONTACT</h1>
+    </section>
+
+
+   <!--CONTACT-------------------------------------------->    
+
+   <section id="form_contact" class="backgris textgris">
+        <h1>Contactez-nous / Devenir annonceur</h1>
+        <p>Vous souhaitez devenir annonceur ? Proposer une publication sponsorisée ? Nous faire part de vos remarques ? 
+           <br />Remplissez le formulaire ci-dessous et nous vous recontacterons dans les plus brefs délais.</p>
+        <form action="#" method="POST">
+            <div class="t50">				
+                <input placeholder="Nom" id="nom" name="nom" type="text" value="" />
+                <label for="nom">Nom</label>
+            </div>
+            <div class="t50">
+                <input placeholder="Prénom" id="prenom" name="prenom" type="text" value="" />
+                <label for="prenom">Prénom</label>
+            </div>
+            <div class="t100">
+                <input placeholder="Email" id="mel" name="mel" type="email" value="" />
+                <label for="mel">Email</label>
+            </div>
+            <div class="t100">
+                <input placeholder="Téléphone" id="tel" name="tel" type="tel" inputmode="tel" value="" />
+                <label for="tel">Téléphone</label>
+            </div>
+            <div id="sel">
+                <select class="textgris">
+                    <option value="" hidden>Pourquoi nous contactez-vous?</option>
+                    <option value="1">Devenir annonceur</option>
+                    <option value="2">Publication sponsorisée</option>
+                    <option value="3">Communiqué de presse</option>
+                    <option value="4">Remarque</option>
+                    <option value="5">Autre</option>
+                </select>
+            </div>
+            <div class="t100">
+                <textarea placeholder="Message" id="message" name="message"></textarea>
+                <label for="message">Message</label>
+            </div>
+            <div class="t100 cgu">
+                <input placeholder="test" id="cgu" name="cgu" type="checkbox" value="oui" />
+                <label for="cgu">J´accepte les conditions générales du site sur la protection des données à caractère personnel</label>
+            </div>
+            <div class="t100 cgu">
+                <input placeholder="test" id="cgu" name="cgu" type="checkbox" value="oui" />
+                <label for="cgu">J'accepte d'être recontacté par email ou par téléphone</label>
+            </div>
+            <input class="textgris" name="submit" type="submit" value="ENVOYER" />
+        </form>
+    </section>
+
+   <!--CONTENT7-------------------------------------------->  
+    <section id="zone4">
+        <div>
+            <a href="https://www.commentcamarche.net/">
+                <img src="images/logo1.png" width="120px" alt="CCM" />
+            </a>
+        </div>
+        <div>
+            <a href="https://www.viatechnik.com/">
+                <img src="images/logo2.png" width="120px" alt="CCM" />
+            </a>
+        </div>
+        <div>
+            <a href="https://www.usine-digitale.fr/">
+                <img src="images/logo3.png" width="120px" alt="CCM" />
+            </a>
+        </div>
+        <div>
+            <a href="https://www.v-cult.com/">
+                <img src="images/logo4.png" width="120px" alt="CCM" />
+            </a>
+        </div>
+        <div>
+            <a href="https://www.flyview360.com/">
+                <img src="images/logo5.png" width="120px" alt="CCM" />
+            </a>
+        </div>
+    </section>
+
+    <!--FOOTER-------------------------------------------->  
+    <footer class="backnoir">
+        <div id="footer1">
+            <div id="sns">
+                <a href="#">
+                    <img src="images/logo.png" width="200" alt="Real & Tech" />
+                </a>
+                <ul >
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook-square fa-2x my-blue fa-fw"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter-square fa-2x my-blue fa-fw"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram fa-2x my-blue fa-fw"></i>
+                        </a>
+                    </li>
+                </ul >
+            </div>
+            <nav id="menu_bas">
+                <ul >   
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="actualite.html">ACTUALITÉS</a>
+                    </li>
+                    <li>
+                        <a href="ar.html">AR</a>
+                    </li>
+                    <li>
+                        <a href="mr.html">MR</a>
+                    </li>
+                    <li>
+                        <a href="vr.html">VR</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>            
+                </ul>
+            </nav>           
+            <div style="margin-top:10px;">
+                <p>Real & Tech</p>
+                <p>2 Avenue de Saint-Malo</p>
+                <p>35000 RENNES</p>
+            </div>
+        </div>
+
+        <div id="copyright">
+            <p>Copyright &copy; 2020, Real & Tech   All Right Reserved</p>
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Terms & conditions</a></p>
+        </div>
+        
+    </footer>
+</body>
+</html>
